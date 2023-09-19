@@ -123,3 +123,6 @@ body {
     background-color: #06b;
   }
   
+  .errorMsg{
+    color: red;
+  }
