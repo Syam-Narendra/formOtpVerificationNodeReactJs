@@ -53,7 +53,7 @@ class Home extends Component{
       return(
       <form onSubmit={this.getData} className="form">
             <div className="title">Welcome</div>
-            <div className="subtitle">Let's create your account!</div>
+            <div className="subtitle">Basic OTP Verification!</div>
             <div className="input-container ic1">
               <input onChange={this.onchangeFname} id="firstname" className="input" type="text" placeholder=" " />
               <div className="cut"></div>
