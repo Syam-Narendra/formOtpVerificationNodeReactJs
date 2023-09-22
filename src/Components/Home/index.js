@@ -33,6 +33,7 @@ class Home extends Component{
           headers: headers,
           body: JSON.stringify(inputs)
         }
+        try{
         const response = await fetch(url,options)
         const data = await response.json();
         console.log(data);
@@ -40,6 +41,9 @@ class Home extends Component{
           this.setState({pageStatus:pageStatusOptions.success});
         }else{
           this.setState({otpSent: false});
+        }
+        }catch(e){
+            this.setState({otpSent:false});
         }
     }
 
